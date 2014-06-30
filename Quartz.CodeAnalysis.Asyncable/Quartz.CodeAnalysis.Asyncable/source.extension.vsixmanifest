@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="Quartz.CodeAnalysis.Asyncable..48129958-95e0-46b9-b989-361fadf90baf">
+    <Name>Asyncable CTP</Name>
+    <Author>Quartz Technologies, Ltd.</Author>
+    <Version>0.1.0.0</Version>
+    <Description xml:space="preserve">This code refactoring tool allows you to automatically generate async/sync method variant from a given method, i.e. from sync method, it allows to create an async method variant and vise-versa. In addition, this tool does support batch generation for entire class and/or interface.</Description>
+    <Locale>1033</Locale>
+    <SupportedProducts>
+      <VisualStudio Version="12.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.5" />
+    <InstalledByMsi>false</InstalledByMsi>
+    <PreviewImage>preview.png</PreviewImage>
+  </Identifier>
+  <References>
+    <!--Add References here-->
+  </References>
+  
+  <Content>
+    <Assembly AssemblyName="Microsoft.CodeAnalysis"></Assembly>
+    <Assembly AssemblyName="Microsoft.CodeAnalysis.Workspaces"></Assembly>
+    <Assembly AssemblyName="Microsoft.CodeAnalysis.Features"></Assembly>
+    <Assembly AssemblyName="Microsoft.CodeAnalysis.CSharp"></Assembly>
+    <Assembly AssemblyName="Microsoft.CodeAnalysis.CSharp.Workspaces"></Assembly>
+    <MefComponent>|%CurrentProject%|</MefComponent>
+  </Content>
+
+</Vsix>
